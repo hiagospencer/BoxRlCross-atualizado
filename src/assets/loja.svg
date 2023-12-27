@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="28.037mm" height="22.555mm" clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" version="1.0" viewBox="0 0 1228 988">
+ <defs>
+  <style type="text/css">
+   
+    .str2 {stroke:#2B2A29;stroke-width:59.3451}
+    .str1 {stroke:#2B2A29;stroke-width:74.1781}
+    .str0 {stroke:#2B2A29;stroke-width:92.7259}
+    .fil0 {fill:none}
+   
+  </style>
+ </defs>
+    <path class="fil0 str0" d="m325 234l839-3-139 427h-700v-424z"/>
+    <path class="fil0 str1" d="m325 234c-31-65-62-130-78-163s-17-34-56-34c-38 0-114 1-190 2"/>
+     <circle class="fil0 str2" cx="470" cy="869" r="89"/>
+     <circle class="fil0 str2" cx="873" cy="869" r="89"/>
+   <path class="fil0 str0" d="m516 234v424"/>
+   <path class="fil0 str0" d="m701 234v424"/>
+   <path class="fil0 str0" d="m887 234v424"/>
+   <path class="fil0 str0" d="m325 361h785"/>
+   <path class="fil0 str0" d="m325 510h737"/>
+</svg>
