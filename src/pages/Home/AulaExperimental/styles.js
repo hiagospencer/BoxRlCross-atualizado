@@ -60,10 +60,22 @@ export const Container = styled.section`
     border-radius: 8px;
     border: 1px solid rgba(0,0,0,0.1);
     box-shadow: 0 1px 3px rgba(50,50,93,.15), 0 1px 0 rgba(0,0,0,.02);
-    color: #9b9b9b;
+    color: #181818;
   }
   form input[type=text] {
     width: calc(80% / 2);
+  }
+
+  form p {
+    display: none;
+  }
+
+  form  .error{
+    display: block;
+    color: red;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
   }
 
   button {

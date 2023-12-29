@@ -15,7 +15,7 @@ export const Container = style.div`
     img {
         width: 100%;
         max-width: 50%;
-        max-height: 100%;
+        max-height: 80%;
         border-radius: 10px;
     }
 

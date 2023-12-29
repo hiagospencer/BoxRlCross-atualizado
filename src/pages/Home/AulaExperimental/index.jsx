@@ -3,6 +3,42 @@ import { Container } from "./styles";
 import logo from "../../../assets/logo2.jpeg";
 
 function index() {
+  const sendToWhatSapp = () => {
+    const numeroDestino = "+5584988638467";
+    const mensagem =
+      "Olá, gostaria de fazer parte da família RL Cross Training!";
+
+    const nome = document.querySelector("#firstName").value;
+    const sobrenome = document.querySelector("#lastName").value;
+    const email = document.querySelector("#email").value;
+    const telefone = document.querySelector("#phone").value;
+    const errorMensagem = document.querySelector("#errorMensagem");
+
+    const url =
+      "https://wa.me/" +
+      numeroDestino +
+      "?text=" +
+      mensagem +
+      "%0a%0a" +
+      "Nome: " +
+      nome +
+      "%0a" +
+      "Sobrenome: " +
+      sobrenome +
+      "%0a" +
+      "Email: " +
+      email +
+      "%0a" +
+      "Telefone: " +
+      telefone +
+      "%0a";
+
+    if (nome === "" || sobrenome === "" || email === "" || telefone === "") {
+      errorMensagem.setAttribute('class', 'error')
+    } else {
+      window.open(url, "_blank").focus();
+    }
+  };
   return (
     <Container>
       <div className="description">
@@ -18,12 +54,18 @@ function index() {
         <img src={logo} alt="" />
         <h2>RL CROSS TRAINING</h2>
         <p>
-          PARA AGENDAR UMA AULA EXPERIMENTAL, PREENCHAR OS CAMPOS
-          ABAIXO, VOCÊ SERÁ DIRECIONADO PARA O WHATSAPP
+          PARA AGENDAR UMA AULA EXPERIMENTAL, PREENCHAR OS CAMPOS ABAIXO, VOCÊ
+          SERÁ DIRECIONADO PARA O WHATSAPP
         </p>
       </div>
-      <form action="." method="get">
-        <input type="text" name="firstName" id="firstName" placeholder="Nome" required/>
+      <form>
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          placeholder="Nome"
+          required
+        />
 
         <input
           type="text"
@@ -33,11 +75,27 @@ function index() {
           required
         />
 
-        <input type="email" name="email" id="email" placeholder="Email" required />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required
+        />
 
-        <input type="number" name="phone" id="phone" placeholder="Telefone" required/>
+        <input
+          type="number"
+          name="phone"
+          id="phone"
+          placeholder="Telefone"
+          required
+        />
 
-        <button type="submit">IR PARA WHATSAPP</button>
+        <p id="errorMensagem">* Preenchar os campos corretamente!</p>
+
+        <button type="button" onClick={sendToWhatSapp}>
+          IR PARA WHATSAPP
+        </button>
       </form>
     </Container>
   );

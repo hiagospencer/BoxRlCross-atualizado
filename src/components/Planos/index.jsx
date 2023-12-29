@@ -1,3 +1,4 @@
+
 import { BoxPlanos } from "./styles";
 
 function index({ infoPlanos }) {

@@ -1,8 +1,17 @@
+import Produtos from "../../components/Produtos";
+
+import { Container } from "./styles";
 
 function index() {
   return (
-    <div>Shpping</div>
-  )
+    <Container>
+      <div>
+        <h1>Acessórios e Suplementos</h1>
+      </div>
+      <p>*Retirada dos produtos somente na Acadêmia</p>
+      <Produtos />
+    </Container>
+  );
 }
 
-export default index
+export default index;

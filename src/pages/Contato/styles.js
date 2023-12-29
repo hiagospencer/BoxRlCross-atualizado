@@ -28,13 +28,12 @@ export const Container = styled.main`
     border-top-left-radius: 20%;
     border-bottom-right-radius: 20%;
 
-    background: #606060;
+    background: ${({ theme }) => theme.colors.red};
     width: 30%;
 
     .info-contato {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
       margin: 0 auto;
       width: 100%;

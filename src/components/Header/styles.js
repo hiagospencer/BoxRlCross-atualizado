@@ -117,8 +117,8 @@ ${({isMenuOpen}) => isMenuOpen ? css`width: 15.3rem;` : css`width: 7.75rem;`}
                     padding: 0rem;
 
                     svg {
-                        width: 3.25rem;
-                        height: 3.25rem;
+                        width: 2.55rem;
+                        height: 2.55rem;
                     }
                     span{
                         display: none;

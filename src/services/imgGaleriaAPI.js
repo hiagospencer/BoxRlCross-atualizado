@@ -19,6 +19,7 @@ import img18 from "../assets/galeria/img18.jpeg";
 import img19 from "../assets/galeria/img19.jpeg";
 import img20 from "../assets/galeria/img20.jpeg";
 import img21 from "../assets/galeria/img21.jpeg";
+import img24 from "../assets/galeria/img24.jpg";
 
 export const imgGaleriaAPI = [
   {
@@ -104,6 +105,10 @@ export const imgGaleriaAPI = [
   {
     id: 21,
     imgSrc: img21,
+  },
+  {
+    id: 24,
+    imgSrc: img24,
   },
 
 ];

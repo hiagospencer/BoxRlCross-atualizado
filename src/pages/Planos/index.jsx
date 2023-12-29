@@ -1,5 +1,7 @@
 import { planosAPI } from "../../services/planosAPI";
 
+import Horarios from './Horarios/index'
+
 import Head from "../../components/Head/index";
 import Footer from "../../components/Footer/index";
 import CardPlanos from "../../components/Planos/index";
@@ -18,6 +20,7 @@ function index() {
         </p>
       </div>
       <CardPlanos infoPlanos={planosAPI} />
+      <Horarios />
       <Footer />
     </Container>
   );
