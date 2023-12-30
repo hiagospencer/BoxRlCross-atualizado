@@ -34,7 +34,7 @@ function index() {
       "%0a";
 
     if (nome === "" || sobrenome === "" || email === "" || telefone === "") {
-      errorMensagem.setAttribute('class', 'error')
+      errorMensagem.setAttribute("class", "error");
     } else {
       window.open(url, "_blank").focus();
     }
@@ -54,7 +54,7 @@ function index() {
         <img src={logo} alt="" />
         <h2>RL CROSS TRAINING</h2>
         <p>
-          PARA AGENDAR UMA AULA EXPERIMENTAL, PREENCHAR OS CAMPOS ABAIXO, VOCÊ
+          PARA AGENDAR UMA AULA EXPERIMENTAL, PREENCHA OS CAMPOS ABAIXO, VOCÊ
           SERÁ DIRECIONADO PARA O WHATSAPP
         </p>
       </div>
@@ -82,7 +82,6 @@ function index() {
           placeholder="Email"
           required
         />
-
         <input
           type="number"
           name="phone"

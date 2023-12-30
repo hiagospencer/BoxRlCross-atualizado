@@ -4,7 +4,7 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   max-width: 740px;
-  box-shadow: 0 4px 4px rgba(87,100,126,.21);
+  box-shadow: 0 4px 4px rgba(87, 100, 126, 0.21);
   border-radius: 20px;
   margin: 20px auto 40px auto;
 
@@ -15,10 +15,10 @@ export const Container = styled.section`
     padding: 50px;
     line-height: 2.1rem;
 
-    color: #54595F;
+    color: #54595f;
   }
 
-  .title{
+  .title {
     background-color: #1d1d1d;
     display: flex;
     flex-direction: column;
@@ -27,16 +27,16 @@ export const Container = styled.section`
     padding: 20px;
 
     h2 {
-        font-size: 2rem;
-        font-weight: 600;
-        padding-bottom: 20px;
+      font-size: 2rem;
+      font-weight: 600;
+      padding-bottom: 20px;
     }
 
-    p{
-        text-align: center;
-        font-size: 1.2rem;
-        color: #fff;
-        line-height: 1.9rem;
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #fff;
+      line-height: 1.9rem;
     }
   }
 
@@ -58,11 +58,11 @@ export const Container = styled.section`
     height: 35px;
     outline: none;
     border-radius: 8px;
-    border: 1px solid rgba(0,0,0,0.1);
-    box-shadow: 0 1px 3px rgba(50,50,93,.15), 0 1px 0 rgba(0,0,0,.02);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
     color: #181818;
   }
-  form input[type=text] {
+  form input[type="text"] {
     width: calc(80% / 2);
   }
 
@@ -70,7 +70,7 @@ export const Container = styled.section`
     display: none;
   }
 
-  form  .error{
+  form .error {
     display: block;
     color: red;
     width: 100%;
@@ -78,19 +78,19 @@ export const Container = styled.section`
     padding: 15px 0;
   }
 
+
   button {
     background-color: #19bb40;
-    color: #FFF;
+    color: #fff;
     padding: 15px 19px;
     border: none;
     border-radius: 8px;
-     cursor: pointer;
+    cursor: pointer;
     transition: background-color 0.2s;
   }
 
-  button:hover{
-    background-color: #16AA52;
+  button:hover {
+    background-color: #16aa52;
     border: none;
-
   }
 `;

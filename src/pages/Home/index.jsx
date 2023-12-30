@@ -7,7 +7,7 @@ import PorqueCrossfit from './PorqueCrossfit/index'
 
 import { Container } from "./styles";
 
-import imgBanner from "../../assets/box-rl2.jpg";
+import imgBanner from "../../assets/galeria/img12.jpeg";
 
 function index() {
   return (

@@ -44,8 +44,9 @@ export default function index() {
           <p>
             Graduado em Educação Física licenciatura, bacharelado, Medicina
             chinesa, massoterapeuta, licença da CBF e Graduando Fisioterapia
-            5/10. Somos um centro de treinamento que conta com estrutura moderna
-            e aparelhos de ultima geração, com aulas ministrada por Rodrigo
+            5/10, Faixa marrom de Jiu-Jitsu, Corredor, Khan Sib de Muai Thai.
+            Somos um centro de treinamento que conta com estrutura moderna e
+            aparelhos de ultima geração, com aulas ministrada por Rodrigo
             Leonardo um profissional qualificado. Para quem busca saúde e
             longevidade através dos esportes, a RLCROSS TRANING é o lugar certo;
             Aqui tudo foi pensado com carinho para atender a sua vontade. porque
@@ -54,7 +55,6 @@ export default function index() {
         </div>
       </CardCoach>
       <Footer />
-
     </Container>
   );
 }

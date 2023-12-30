@@ -15,12 +15,13 @@ export const Container = styled.section`
       height: 600px;
 
       object-fit: cover;
-      filter: contrast(140%) brightness(45%);
+      filter: contrast(100%) brightness(100%);
     }
 
     h1 {
+      display: none;
       position: absolute;
-      top: 50%;
+      top: 60%;
       left: 50%;
       transform: translate(-50%, -10%);
 
