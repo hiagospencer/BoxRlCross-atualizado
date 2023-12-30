@@ -114,11 +114,12 @@ ${({isMenuOpen}) => isMenuOpen ? css`width: 15.3rem;` : css`width: 7.75rem;`}
             li{
                 a {
                     flex-direction:row;
-                    padding: 0rem;
+                    padding: 0;
 
                     svg {
                         width: 2.55rem;
                         height: 2.55rem;
+                        margin-left: 20px;
                     }
                     span{
                         display: none;
