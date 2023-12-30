@@ -25,9 +25,10 @@ export const BoxPlanos = styled.div`
     display: block;
     font-size: 1.3rem;
     font-weight: 600;
-    color: ${({ theme }) => theme.colors.gray400};
+    color: ${({ theme }) => theme.colors.gray100};
     border-bottom: 1px solid #a1a0a0;
     padding-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   .info-planos p {
     margin-top: 16px;
