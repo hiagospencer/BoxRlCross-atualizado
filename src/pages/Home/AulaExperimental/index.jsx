@@ -91,7 +91,7 @@ function index() {
           required
         />
 
-        <p id="errorMensagem">* Preenchar os campos corretamente!</p>
+        <p id="errorMensagem">* Preencha os campos corretamente!</p>
 
         <button type="button" onClick={sendToWhatSapp}>
           IR PARA WHATSAPP
