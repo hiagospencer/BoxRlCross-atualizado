@@ -4,7 +4,7 @@ import logo from "../../../assets/logo2.jpeg";
 
 function index() {
   const sendToWhatSapp = () => {
-    const numeroDestino = "+5584988638467";
+    const numeroDestino = "+5584987137129";
     const mensagem =
       "Olá, gostaria de fazer parte da família RL Cross Training!";
 
