@@ -1,18 +1,18 @@
-import img1 from "../assets/produtos/corda-pular.jpeg";
-import img2 from "../assets/produtos/grip-ginastica.jpeg";
-import img3 from "../assets/produtos/munhequeiras-brabuz.jpeg";
-import img4 from "../assets/produtos/whey-protein-titanium.jpeg";
-import img5 from "../assets/produtos/c4-beta-pump.jpeg";
-import img6 from "../assets/produtos/creatina-sem-gluten.jpeg";
-import img7 from "../assets/produtos/dr-peanut.jpeg";
-import img8 from "../assets/produtos/dr-peanut-amendoim.jpeg";
-import img9 from "../assets/produtos/dr-peanut-avela.jpeg";
-import img10 from "../assets/produtos/dr-peanut-beuniss.jpeg";
-import img11 from "../assets/produtos/dr-peanut-brown.jpeg";
-import img12 from "../assets/produtos/dr-peanut-chocolate.jpeg";
-import img13 from "../assets/produtos/dr-peanut-chocotone.jpeg";
-import img14 from "../assets/produtos/dr-peanut-cookies.jpeg";
-import img15 from "../assets/produtos/egide.jpeg";
+import img1 from "../assets/produtos2/corda-pular.webp";
+import img2 from "../assets/produtos2/grip-ginástica.webp";
+import img3 from "../assets/produtos2/munhequeira.webp";
+import img4 from "../assets/produtos2/whey-protein.webp";
+import img5 from "../assets/produtos2/c4-beta.webp";
+import img6 from "../assets/produtos2/creatine-max.webp";
+import img7 from "../assets/produtos2/dr-peanut-brigadeiro.webp";
+import img8 from "../assets/produtos2/dr-peanut-leite.webp";
+import img9 from "../assets/produtos2/dr-peanut-avela.webp";
+import img10 from "../assets/produtos2/dr-peanut-buenissimo.webp";
+import img11 from "../assets/produtos2/dr-peanut-brownie.webp";
+import img12 from "../assets/produtos2/dr-peanut-chococo.webp";
+import img13 from "../assets/produtos2/dr-peanut-chocotine.webp";
+import img14 from "../assets/produtos2/dr-peanut-cookies-cream.webp";
+import img15 from "../assets/produtos2/workut-egide.webp";
 
 export const produtosAPI = [
   {
@@ -72,7 +72,7 @@ export const produtosAPI = [
     img: img7,
 
     description:
-      "Dr. Peanut Suplemento em pasta power cream proteínas brigadeiro em pote de 600g",
+    "Ela contém em sua formulação 25% de proteína ISOLADA. E ainda é adoçada com xilitol.     A Pasta de Amendoim da Dr. Peanut é um alimento rico em gordura monoinsaturada, aquela gordura ?boa?, e fitosteróis que ajudam no combate do colesterol.",
     price: 54.99,
   },
   {
