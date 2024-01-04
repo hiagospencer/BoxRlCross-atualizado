@@ -38,7 +38,7 @@ export const produtosAPI = [
   },
   {
     id: 3,
-    name: "Munhequeiras Brabuz",
+    name: "Munhequeira Brabuz",
     img: img3,
     description:
       "O seu uso é recomendado para uma maior estabilidade da articulação do punho para exercícios de Overhead Squat , Snatches e outros tipos de powerlifting.",
