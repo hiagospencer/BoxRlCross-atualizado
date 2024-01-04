@@ -24,7 +24,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body,input,select,textarea,button {
-    font: 400 1rem 'Roboto', Helvetica, Arial, sans-serif;
+    font: 400 1rem 'Lato', Helvetica, Arial, sans-serif;
   }
 
   html, body, #root {
@@ -53,4 +53,3 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 `;
-
