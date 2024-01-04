@@ -13,6 +13,11 @@ import img12 from "../assets/produtos2/dr-peanut-chococo.webp";
 import img13 from "../assets/produtos2/dr-peanut-chocotine.webp";
 import img14 from "../assets/produtos2/dr-peanut-cookies-cream.webp";
 import img15 from "../assets/produtos2/workut-egide.webp";
+import img16 from "../assets/produtos2/cinturao-agachamento.webp";
+import img17 from "../assets/produtos2/duo-face.webp";
+import img18 from "../assets/produtos2/joelheira.webp";
+import img19 from "../assets/produtos2/munhequeira-nx.webp";
+import img20 from "../assets/produtos2/thick-strap.webp";
 
 export const produtosAPI = [
   {
@@ -146,6 +151,51 @@ export const produtosAPI = [
     description:
       "O Égide é o melhor pré-treino para você, Sua formulação é concentrada e é fonte dos aminoácidos beta-alanina, taurina, arginina e tirosina, associados à cafeína, que atuam em sinergia para auxiliar ainda mais seu desempenho. Proporcianando mais energia e aumento do desempenho tanto antes, quanto durante a atividade física.",
     price: 134.99,
+  },
+  {
+    id: 16,
+    name: "Cinturão de Agachamento",
+    img: img16,
+
+    description:
+      "O Cinturão para Agachamento da NC EXTREME foi desenvolvido para dar suporte para a coluna durante a prática de exercícios intensos. Também conhecido como cinturão de academia ou cinturão de musculação, protege o core, a lombar e estabiliza a coluna vertebral durante o treino através da compressão abdominal.",
+    price: 250,
+  },
+  {
+    id: 17,
+    name: "Grip Dou Face",
+    img: img17,
+
+    description:
+      "Para aqueles que buscam o melhor desempenho em seus treinos, o DUO FACE é a escolha certa. Com sua tecnologia avançada e materiais de alta qualidade, ele garante a melhor aderência e conforto para as mãos, permitindo que você se concentre em seus movimentos e melhore seus resultados.",
+    price: 250,
+  },
+  {
+    id: 18,
+    name: "Joelheira NC EXTREME",
+    img: img18,
+
+    description:
+      "A joelheira de alta performance NC EXTREME proporciona suporte às articulações e joelhos, otimizando a movimentação do atleta em exercícios como levantamento de peso, treinamento funcional, agachamento, afundo, cadeira extensora e legpress.",
+    price: 300,
+  },
+  {
+    id: 19,
+    name: "Munhequeira NC EXTREME",
+    img: img19,
+
+    description:
+      "A Munhequeira NC EXTREME é a evolução das munhequeiras tradicionais. Produzida com elástico de alta resistência e menor tamanho, garante mais praticidade e segurança nos exercícios físicos intensos e de alto impacto.",
+    price: 70,
+  },
+  {
+    id: 20,
+    name: "Thick Strap",
+    img: img20,
+
+    description:
+      "O Thick Strap NC Extreme auxilia na pegada, dando mais firmeza e proporcionando mais segurança na execução dos exercícios com peso. A barra fica presa ao pulso, eliminando a fadiga dos dedos, não permitindo assim que escape em caso de deslize durante o exercício.",
+    price: 120,
   },
 ];
 

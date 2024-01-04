@@ -24,13 +24,14 @@ export const Container = styled.div`
   .card__infos {
     padding: 20px;
     border-top: 1px solid #ddd;
+
   }
 
   .card__name {
-    font-size: 25px;
+    font-size: 1.4rem;
     font-weight: 400;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: black;
   }
 
