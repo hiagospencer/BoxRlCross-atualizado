@@ -3,16 +3,17 @@ import { Container } from "./styles";
 import logo from "../../../assets/logo2.jpeg";
 
 function index() {
-  const sendToWhatSapp = () => {
-    const numeroDestino = "+5584987137129";
-    const mensagem =
-      "Olá, gostaria de fazer parte da família RL Cross Training!";
 
+  const sendToWhatSapp = () => {
     const nome = document.querySelector("#firstName").value;
     const sobrenome = document.querySelector("#lastName").value;
     const email = document.querySelector("#email").value;
     const telefone = document.querySelector("#phone").value;
     const errorMensagem = document.querySelector("#errorMensagem");
+
+    const numeroDestino = "+5584987137129";
+    const mensagem =
+      "Olá, gostaria de fazer parte da família RL Cross Training!";
 
     const url =
       "https://wa.me/" +
@@ -39,6 +40,7 @@ function index() {
       window.open(url, "_blank").focus();
     }
   };
+  
   return (
     <Container>
       <div className="description">

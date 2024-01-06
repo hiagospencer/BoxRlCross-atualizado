@@ -4,6 +4,9 @@ import { BrowserRouter } from "react-router-dom";
 
 import { AppRoutes } from "./routes";
 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import { ModalContext } from "./context/ModalContext";
 
 import imgGaleriaAPI from "./services/imgGaleriaAPI";
@@ -36,6 +39,7 @@ function App() {
           <AppRoutes />
           <GlobalStyle />
           <Normalize />
+          <ToastContainer />
         </ModalContext.Provider>
       </Theme>
     </BrowserRouter>
