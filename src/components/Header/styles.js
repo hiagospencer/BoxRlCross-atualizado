@@ -32,6 +32,7 @@ ${({isMenuOpen}) => isMenuOpen ? css`width: 15.3rem;` : css`width: 7.75rem;`}
             flex-direction: column;
             justify-content: center;
             gap: 1.5rem;
+            text-decoration: none;
         }
 
         li {
