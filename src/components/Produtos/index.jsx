@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useState } from "react";
 
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 
 import { currencyFormat } from "../../helpers/currencyFormat";
 
@@ -18,10 +18,18 @@ function index() {
     setProductCart({ name: name, price: price, id: index });
 
     if (!productCart) {
-      notifyError()
+      notifyError();
     } else {
-      notifySucess()
-      sendToWhatSapp()
+      const result = confirm(
+        `Deseja enviar o produto ${productCart.name} ao vendendor?`
+      );
+
+      if (result == true) {
+        notifySucess();
+        sendToWhatSapp();
+      } else {
+        alert("Envio cancelado!");
+      }
     }
   };
 
@@ -43,9 +51,8 @@ function index() {
     window.open(url, "_blank").focus();
   };
 
-
   const notifySucess = () => {
-    toast.success('Produto adicionado com sucesso!', {
+    toast.success("Produto enviado com sucesso!", {
       position: "top-right",
       autoClose: 5000,
       hideProgressBar: false,
@@ -54,11 +61,11 @@ function index() {
       draggable: true,
       progress: undefined,
       theme: "light",
-      });
-  }
+    });
+  };
 
   const notifyError = () => {
-    toast.error('[ERROR] Tente novamente.', {
+    toast.error("[ERROR] Tente novamente.", {
       position: "top-right",
       autoClose: 5000,
       hideProgressBar: false,
@@ -67,9 +74,8 @@ function index() {
       draggable: true,
       progress: undefined,
       theme: "colored",
-      });
-  }
-
+    });
+  };
 
   return (
     <Container>
