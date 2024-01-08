@@ -21,7 +21,7 @@ function index() {
       notifyError();
     } else {
       const result = confirm(
-        `Deseja enviar o produto ${productCart.name} ao vendendor?`
+        `Deseja enviar o produto ${productCart.name} ao vendedor?`
       );
 
       if (result == true) {
@@ -97,7 +97,7 @@ function index() {
               onClick={() =>
                 getProductCart(produto.name, produto.price, produto.id)
               }>
-              <BsFillCartPlusFill />
+             <BsFillCartPlusFill />
             </button>
           </div>
         </section>
