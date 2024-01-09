@@ -27,7 +27,7 @@ function index() {
         sendToWhatsApp(productCart.name, productCart.price);
 
         setTimeout(() => {
-          window.open("/", "_self");
+          window.open("https://rlcrosstraining.vercel.app/", "_self");
         }, 5000);
       }
     } else {
