@@ -88,8 +88,8 @@ function index() {
           type=" text"
           name="phone"
           id="phone"
-          placeholder="Telefone: (xx) x xxxx-xxxx"
-          maxLength="11"
+          placeholder="Telefone: DDD 9 9999 9999"
+          maxLength="14"
           required
         />
 

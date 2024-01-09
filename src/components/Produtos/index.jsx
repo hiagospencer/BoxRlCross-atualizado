@@ -1,9 +1,10 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useState } from "react";
 
-import { toast } from "react-toastify";
-
 import { currencyFormat } from "../../helpers/currencyFormat";
+import { notifySucess } from "../../helpers/notifySucess";
+import { notifyError } from "../../helpers/notifyError";
+import { sendToWhatsApp } from "../../helpers/sendToWhatsApp";
 
 import produtosAPI from "../../services/produtosAPI";
 
@@ -17,63 +18,21 @@ function index() {
   const getProductCart = (name, price, index) => {
     setProductCart({ name: name, price: price, id: index });
 
-    if (!productCart) {
-      notifyError();
-    } else {
+    if (productCart) {
       const result = confirm(
         `Deseja enviar o produto ${productCart.name} ao vendedor?`
       );
-
       if (result == true) {
         notifySucess();
-        // sendToWhatSapp();
-        console.log(productCart);
+        sendToWhatsApp(productCart.name, productCart.price);
+
+        setTimeout(() => {
+          window.location.reload();
+        }, 5000);
       }
+    } else {
+      notifyError();
     }
-  };
-
-  const sendToWhatSapp = () => {
-    const numeroDestino = "+5584987137129";
-    const mensagem = "Olá, esse produto está disponível?";
-
-    const url =
-      "https://wa.me/" +
-      numeroDestino +
-      "?text=" +
-      mensagem +
-      "%0a%0a" +
-      "Nome: " +
-      productCart.name +
-      "%0a" +
-      "Preço: " +
-      productCart.price;
-    window.open(url, "_blank").focus();
-  };
-
-  const notifySucess = () => {
-    toast.success("Produto enviado com sucesso!", {
-      position: "top-right",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "light",
-    });
-  };
-
-  const notifyError = () => {
-    toast.error("[ERROR] Tente novamente.", {
-      position: "top-right",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "colored",
-    });
   };
 
   return (
@@ -87,9 +46,7 @@ function index() {
           </div>
 
           <div className="cart-buy">
-            <h2 className="card__price" onClick={sendToWhatSapp}>
-              {currencyFormat(produto.price)}
-            </h2>
+            <h2 className="card__price">{currencyFormat(produto.price)}</h2>
             <button
               type="button"
               className="button__add-cart"
