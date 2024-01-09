@@ -27,7 +27,7 @@ function index() {
         sendToWhatsApp(productCart.name, productCart.price);
 
         setTimeout(() => {
-          window.location.reload();
+          window.open("/", "_self");
         }, 5000);
       }
     } else {
