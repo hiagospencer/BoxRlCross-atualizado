@@ -6,20 +6,20 @@ export const Container = styled.main`
   .title-coach > h1 {
     text-align: center;
     color: #454545;
-
     font-size: 3rem;
-    font-weight: 900;
+    font-weight: bold;
     font-style: italic;
 
-    padding: 50px 0;
+    padding: 30px 0;
   }
 
   @media (max-width: 768px) {
     flex-direction: column;
 
     .title-coach h1 {
-      font-size: 2rem;
-      margin-top: 70px;
+      padding: 70px 0;
+      color: #454545;
+      font-size: 2.5rem;
     }
   }
 `;
@@ -27,13 +27,14 @@ export const Container = styled.main`
 export const CardCultura = styled.section`
   display: flex;
   justify-content: space-around;
+  padding: 0 2%;
   width: 100%;
   height: 100vh;
 
   margin-top: 80px;
 
   .cultura {
-    width: 45%;
+    width: 50%;
 
     h1 {
       color: #454545;
@@ -49,13 +50,12 @@ export const CardCultura = styled.section`
   }
 
   .img-cultura {
-    width: 45%;
-    height: 500px;
-    background: red;
+    width: 40%;
+    height: 100%;
   }
   .img-cultura img {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 80%;
     max-width: 100%;
   }
 
@@ -76,12 +76,14 @@ export const CardCultura = styled.section`
 
   .img-cultura {
     width: 100%;
+    text-align: center;
   }
 `;
 
 export const CardCoach = styled.section`
   display: flex;
   justify-content: space-around;
+  padding: 0 2%;
   width: 100%;
   height: 100vh;
 
@@ -92,14 +94,13 @@ export const CardCoach = styled.section`
 
   .img-coach img {
     max-width: 100%;
-    width: 100%;
-    height: 550px;
+    width: 80%;
+    height: 80%;
   }
 
   .description {
     width: 45%;
     height: 100vh;
-    margin-bottom: 70px;
   }
 
   .description h1 {

@@ -18,7 +18,7 @@ export const planosAPI = [
     name: "RL STARK SHIP",
     price: 130.0,
     description:
-      "Tenha um check-in diário, no qual tem um limite de 10 pessoas por sala de 7 que abre diariamente e escolha sua melhor hora de treino e vamos em busca do seu melhor. Destinado aos embarcados de 14 por 14 e pessoas que só conseguem 3 ou 2 dias na semana.",
+      "Tenha um check-in diário, no qual tem um limite de 10 pessoas por sala de 7 que abre diariamente e escolha sua melhor hora de treino e vamos em busca do seu melhor. Destinado aos embarcados de 14 por 14 e pessoas que só conseguem 2 ou 3 dias na semana.",
   },
 ];
 

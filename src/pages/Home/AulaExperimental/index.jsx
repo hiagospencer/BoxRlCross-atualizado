@@ -3,7 +3,6 @@ import { Container } from "./styles";
 import logo from "../../../assets/logo2.jpeg";
 
 function index() {
-
   const sendToWhatSapp = () => {
     const nome = document.querySelector("#firstName").value;
     const sobrenome = document.querySelector("#lastName").value;
@@ -40,7 +39,7 @@ function index() {
       window.open(url, "_blank").focus();
     }
   };
-  
+
   return (
     <Container>
       <div className="description">
@@ -85,10 +84,12 @@ function index() {
           required
         />
         <input
-          type="number"
+          className="phone"
+          type=" text"
           name="phone"
           id="phone"
-          placeholder="Telefone"
+          placeholder="Telefone: (xx) x xxxx-xxxx"
+          maxLength="11"
           required
         />
 

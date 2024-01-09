@@ -26,9 +26,8 @@ function index() {
 
       if (result == true) {
         notifySucess();
-        sendToWhatSapp();
-      } else {
-        alert("Envio cancelado!");
+        // sendToWhatSapp();
+        console.log(productCart);
       }
     }
   };
@@ -97,7 +96,7 @@ function index() {
               onClick={() =>
                 getProductCart(produto.name, produto.price, produto.id)
               }>
-             <BsFillCartPlusFill />
+              <BsFillCartPlusFill />
             </button>
           </div>
         </section>
