@@ -23,7 +23,7 @@ function index() {
         `Deseja enviar o produto ${productCart.name} ao vendedor?`
       );
       if (result == true) {
-        notifySucess();
+             notifySucess();
         sendToWhatsApp(productCart.name, productCart.price);
 
         setTimeout(() => {
